@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Head *)",
+      "Bash(pip show *)",
+      "Bash(streamlit run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8501/healthz)",
+      "Bash(ping -n 4 127.0.0.1)",
+      "PowerShell(cd \"D:\\\\code\\\\電腦輔助工程\"; Start-Process powershell -ArgumentList '-NoExit', '-Command', 'cd \"D:\\\\code\\\\電腦輔助工程\"; echo \"\" | streamlit run app.py --server.headless true' -WindowStyle Normal)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8501)",
+      "PowerShell(Get-Process *)",
+      "PowerShell(cd \"D:\\\\code\\\\電腦輔助工程\"; Start-Process powershell -ArgumentList '-NoExit', '-Command', 'cd \"D:\\\\code\\\\電腦輔助工程\"; echo \"\" | streamlit run app.py --server.headless true' -WindowStyle Normal; Start-Sleep -Seconds 3; Write-Host \"Streamlit restarted\")"
+    ]
+  }
+}
